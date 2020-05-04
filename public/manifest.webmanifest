@@ -2,19 +2,45 @@
     "name":"Budget-Tracker",
     "short_name":"Budget-Tracker",
     "icons": [
-        {
-          "src": "/images/icons-192.png",
-          "type": "image/png",
-          "sizes": "192x192"
-        },
-        {
-          "src": "/images/icons-512.png",
-          "type": "image/png",
-          "sizes": "512x512"
-        }
-      ],
-    "theme_color":"#ffffff",
-    "background_color":"#ffffff",
-    "start_url":"/",
-    "display":"standalone"
+      {
+          "src": "./assets/images/icon-72x72.png",
+          "size": "72x72",
+          "type": "image/png"
+      },
+      {
+          "src": "./assets/images/icon-96x96.png",
+          "size": "96x96",
+          "type": "image/png"
+      },
+      {
+          "src": "./assets/images/icon-144x144.png",
+          "size": "144x144",
+          "type": "image/png"
+      },
+      {
+          "src": "./assets/images/icon-152x152.png",
+          "size": "152x152",
+          "type": "image/png"
+      },
+      {
+          "src": "./assets/images/icon-192x192.png",
+          "size": "192x192",
+          "type": "image/png"
+      },
+      {
+          "src": "./assets/images/icon-384x284.png",
+          "size": "384x384",
+          "type": "image/png"
+      },
+      {
+          "src": "./assets/images/icon-512x512.png",
+          "size": "512x512",
+          "type": "image/png"
+      }
+  ],
+  "start_url" : "/",
+  "display" : "fullscreen",
+  "theme_color" : "#B12A34",
+  "background_color" : "#B12A34"
+
 }
