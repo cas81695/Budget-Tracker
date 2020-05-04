@@ -1,15 +1,15 @@
 const express = require("express");
-const mongojs = require("mongojs");
-const mongoose = require("mongoose");
 const logger = require("morgan");
-const path = require("path");
+const mongoose = require("mongoose");
+const compression = require("compression");
+
+const PORT = process.env.PORT || 6500;
 
 const app = express();
 
-const PORT = process.env.PORT || 7000;
-
 app.use(logger("dev"));
 
+app.use(compression());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -20,17 +20,9 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
   useFindAndModify: false
 });
 
-const databaseUrl = process.env.MONGODB_URI || "budget";
-const collections = ["budget"];
-
-const db = mongojs(databaseUrl, collections);
-
-db.on("error", error => {
-  console.log("Database Error:", error);
-});
-
+// routes here
 app.use(require("./routes/api.js"));
 
 app.listen(PORT, () => {
-  console.log(`Application running on PORT ${PORT}`);
+  console.log(`App running on port ${PORT}!`);
 });
