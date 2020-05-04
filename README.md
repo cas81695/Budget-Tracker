@@ -22,11 +22,7 @@ The app is deployed on Heroku with the link: https://git.heroku.com/dry-savannah
 *[Contribution](#contribution)
 
 
-
-
-<img width="1440" alt="Screen Shot 2020-05-04 at 4 38 23 PM" src="https://user-images.githubusercontent.com/58318559/81011912-b8e2e380-8e26-11ea-9baa-825ad3c7cd53.png">
-
-
+<img width="1440" alt="Screen Shot 2020-05-04 at 4 38 23 PM" src="https://user-images.githubusercontent.com/58318559/81012251-3b6ba300-8e27-11ea-9d04-9cf080fc0e1a.png">
 
 
 ## Installation
